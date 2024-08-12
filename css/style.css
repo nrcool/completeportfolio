@@ -9,8 +9,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -30,31 +29,22 @@
   height: 406px;
   background: black;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #coun {
   position: absolute;
   top: 51.5%;
   left: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
   color: black;
   font-size: 25px;
   text-align: center;
@@ -68,16 +58,14 @@
 
 .circ1 {
   position: absolute;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 50%;
   width: 300px;
   height: 300px;
   border: 10px solid transparent;
   border-top-color: yellow;
   border-bottom-color: yellow;
-  -webkit-animation: circle1 2s alternate infinite;
-          animation: circle1 2s alternate infinite;
+  animation: circle1 2s alternate infinite;
 }
 
 .circ2 {
@@ -85,13 +73,11 @@
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 10px solid transparent;
   border-right-color: yellow;
   border-left-color: yellow;
-  -webkit-animation: circle2 2s alternate infinite;
-          animation: circle2 2s alternate infinite;
+  animation: circle2 2s alternate infinite;
 }
 
 .circ3 {
@@ -99,48 +85,27 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 10px solid transparent;
   border-top-color: yellow;
   border-bottom-color: yellow;
-  -webkit-animation: circle1 2s alternate infinite;
-          animation: circle1 2s alternate infinite;
-}
-
-@-webkit-keyframes circle1 {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  animation: circle1 2s alternate infinite;
 }
 
 @keyframes circle1 {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
-@-webkit-keyframes circle2 {
-  100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
 @keyframes circle2 {
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
-
 html {
   font-size: 16px;
   background: black;
 }
-
 html .head {
   background: url(/images/drawing-1.svg);
   background-size: cover;
@@ -156,22 +121,19 @@ header {
   background-repeat: no-repeat;
   background-position: 100% -20%;
 }
-
 header .maincontent h1 {
   margin-top: 200px;
 }
-
 header h3 {
   background: rgba(216, 161, 9, 0.3);
   color: yellow;
   padding: 0.5rem;
   margin: 40px;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
   max-width: 700px;
 }
-
 header h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 800;
   line-height: 70px;
@@ -181,39 +143,27 @@ header h1 {
   color: white;
   margin-left: 1rem;
 }
-
 header h1 > span {
   color: yellow;
   position: relative;
 }
-
 header h1 > span span {
   display: inline-block;
   position: relative;
-  -webkit-animation: jump 2s alternate infinite;
-          animation: jump 2s alternate infinite;
+  animation: jump 2s alternate infinite;
 }
-
 header h1 > span span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
-
 header h1 > span span:nth-child(3) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
-
 header h1 > span span:nth-child(4) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
-
 header h1 > span span:nth-child(5) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
-
 header h1 > span::before {
   position: absolute;
   content: "";
@@ -222,7 +172,6 @@ header h1 > span::before {
   left: 0;
   border-bottom: 8px solid yellow;
 }
-
 header h1 > span::after {
   position: absolute;
   content: "";
@@ -231,47 +180,37 @@ header h1 > span::after {
   left: 24%;
   border-bottom: 8px solid yellow;
 }
-
 header .navibar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100vw;
   position: fixed;
   top: 0;
   z-index: 99;
 }
-
 header .navibar .theme {
   width: 30px;
   height: 30px;
   border: 2px solid yellow;
   display: inline-block;
 }
-
 header .navibar .one {
-  background-color: #0ef012;
+  background-color: rgb(14, 240, 18);
 }
-
 header .navibar .two {
-  background-color: #3636cf;
+  background-color: rgb(54, 54, 207);
 }
-
 header .navibar .three {
   background-color: #BE166C;
 }
-
 header .navibar h1 {
   font-size: 2rem;
   width: 200px;
   margin-left: 1rem;
 }
-
 header .navibar h1 span::after, header .navibar h1 span::before {
   border-bottom: 4px solid #F3D42B;
   bottom: -2px;
 }
-
 header .navibar #ham {
   font-size: 3rem;
   color: yellow;
@@ -280,26 +219,18 @@ header .navibar #ham {
   position: absolute;
   right: 20px;
 }
-
 header .navibar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 1200px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
 header .navibar ul li {
   list-style: none;
   position: relative;
   min-width: 150px;
   background: black;
 }
-
 header .navibar ul li a {
   position: absolute;
   width: 100%;
@@ -310,21 +241,17 @@ header .navibar ul li a {
   color: white;
   border: 2px solid yellow;
 }
-
 header .navibar ul li .act {
   color: black;
   background: yellow;
 }
-
 header .navibar ul li a:hover {
   color: black;
   background: yellow;
 }
-
 header .play {
   margin-left: 1rem;
 }
-
 header .play a {
   border: 2px solid yellow;
   padding: 1rem;
@@ -332,19 +259,17 @@ header .play a {
   color: yellow;
   letter-spacing: 3px;
 }
-
 header .play a:hover {
   background: yellow;
   color: black;
 }
-
 header .play a i {
   padding-right: 5px;
 }
 
 /***************** About me  ****************/
 .section1 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -356,12 +281,10 @@ header .play a i {
   margin-left: 1rem;
   text-align: center;
 }
-
 .section1 h1 span {
   color: yellow;
   position: relative;
 }
-
 .section1 h1 span::before {
   position: absolute;
   content: "";
@@ -371,7 +294,6 @@ header .play a i {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 .section1 h1 span::after {
   position: absolute;
   content: "";
@@ -381,129 +303,97 @@ header .play a i {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 .section1 .container1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   min-height: 600px;
   color: white;
 }
-
 .section1 .container1 .aboutme {
   width: 600px;
 }
-
 .section1 .container1 .aboutme .details p {
   font-size: 1.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
-
 .section1 .container1 .aboutme .resume {
   padding: 20px;
   position: relative;
 }
-
 .section1 .container1 .aboutme .resume > i {
   font-size: 6rem;
   position: absolute;
   right: 20px;
   opacity: 0.2;
 }
-
 .section1 .container1 .aboutme .resume p {
   padding: 0.5rem;
   font-size: 1.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
-
 .section1 .container1 .aboutme .resume p span {
   color: yellow;
 }
-
 .section1 .container1 .aboutme .resume p a i {
   color: yellow;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
-
 .section1 .container1 .aboutme .resume p .downloadcv {
   text-decoration: none;
   color: black;
   background: yellow;
   padding: 0.5rem;
 }
-
 .section1 .container1 .aboutme .resume p .downloadcv i {
   color: black;
 }
-
 .section1 .container1 .aboutme .resume p .downloadcv:hover {
   background: black;
   border: 5px solid yellow;
   color: yellow;
 }
-
 .section1 .container1 .aboutme .resume p .downloadcv:hover i {
   color: yellow;
 }
-
 .section1 .container1 .aboutme .resume #resume {
   /*  width: 90%;
-                    height:70%; */
+  height:70%; */
   border: 2px solid yellow;
 }
-
 .section1 .container1 .aboutme .resume #resume .info {
   text-align: center;
   height: 0;
   overflow: hidden;
 }
-
 .section1 .container1 .aboutme .resume #resume .info li {
   list-style: none;
   padding: 0.3rem;
   font-size: 1rem;
 }
-
 .section1 .container1 .aboutme .resume #resume .info li i {
   color: yellow;
 }
-
 .section1 .container1 .imgborder {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 600px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .section1 .container1 .imgborder .borderimg {
   width: 300px;
   height: 300px;
   position: relative;
   z-index: 1;
 }
-
 .section1 .container1 .imgborder .borderimg img {
   display: block;
   border: 2px solid yellow;
   padding: 5px;
+  filter: grayscale(100%);
 }
-
 .section1 .container1 .imgborder .borderimg::after {
   content: "";
   position: absolute;
@@ -515,7 +405,6 @@ header .play a i {
   left: -100px;
   z-index: 5;
 }
-
 .section1 .container1 .imgborder .borderimg::before {
   content: "";
   position: absolute;
@@ -530,7 +419,7 @@ header .play a i {
 
 /***************** My skills****************/
 .section2 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -542,12 +431,10 @@ header .play a i {
   margin-left: 1rem;
   text-align: center;
 }
-
 .section2 h1 span {
   color: yellow;
   position: relative;
 }
-
 .section2 h1 span::before {
   position: absolute;
   content: "";
@@ -557,7 +444,6 @@ header .play a i {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 .section2 h1 span::after {
   position: absolute;
   content: "";
@@ -567,27 +453,17 @@ header .play a i {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 .section2 .container2 {
   width: 100%;
   min-height: 600px;
   color: yellow;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 30px;
 }
-
 .section2 .container2 h1 {
   font-size: 1.5rem;
   color: white;
@@ -595,11 +471,9 @@ header .play a i {
   clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
   border: 5px solid yellow;
 }
-
 .section2 .container2 p {
   text-align: center;
 }
-
 .section2 .container2 p i {
   font-size: 2rem;
   line-height: 100px;
@@ -610,39 +484,26 @@ header .play a i {
   background: yellow;
   margin-bottom: 1rem;
 }
-
 .section2 .container2 .circle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 200px;
   height: 200px;
   margin-top: 15px;
   border-radius: 50%;
-  -webkit-transition: .5s;
-  transition: .5s;
+  transition: 0.5s;
   border: 10px solid yellow;
   position: relative;
 }
-
 .section2 .container2 .circle h2 {
   color: white;
   font-size: 2rem;
 }
-
 .section2 .container2 .circle:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
-
 .section2 .container2 .html::before {
   content: "";
   width: 30%;
@@ -651,7 +512,6 @@ header .play a i {
   position: absolute;
   left: -10px;
 }
-
 .section2 .container2 .css::before {
   content: "";
   width: 30%;
@@ -660,7 +520,6 @@ header .play a i {
   position: absolute;
   left: -10px;
 }
-
 .section2 .container2 .javascript::before {
   content: "";
   width: 30%;
@@ -669,7 +528,6 @@ header .play a i {
   position: absolute;
   left: -10px;
 }
-
 .section2 .container2 .bootstrap::before {
   content: "";
   width: 30%;
@@ -678,7 +536,6 @@ header .play a i {
   position: absolute;
   left: -10px;
 }
-
 .section2 .container2 .sass::before {
   content: "";
   width: 30%;
@@ -687,11 +544,9 @@ header .play a i {
   position: absolute;
   left: -10px;
 }
-
 .section2 .container2 h2 {
   mix-blend-mode: difference;
 }
-
 .section2 .container2 .myskills,
 .section2 .container2 .myskills2 {
   max-width: 500px;
@@ -703,20 +558,12 @@ header .play a i {
   border: 2px solid yellow;
   background-image: url(/images/074ec2114b06cafad5df6a62b66e66bd.jpg);
   background-attachment: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   padding-bottom: 1rem;
 }
-
 .section3 .container3 .cl1,
 .section3 .container3 .cl2,
 .section3 .container3 .cl3 {
@@ -724,7 +571,6 @@ header .play a i {
   min-width: 400px;
   padding: 70px;
 }
-
 .section3 .container3 .cl1 h2,
 .section3 .container3 .cl2 h2,
 .section3 .container3 .cl3 h2 {
@@ -732,29 +578,27 @@ header .play a i {
   font-size: 3rem;
   text-align: center;
 }
-
 .section3 .container3 .cl1 h4,
 .section3 .container3 .cl2 h4,
 .section3 .container3 .cl3 h4 {
   font-size: 2rem;
   text-align: center;
   color: yellow;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 .section3 .container3 .cl1 p,
 .section3 .container3 .cl2 p,
 .section3 .container3 .cl3 p {
   font-size: 1.2rem;
   text-align: center;
   background: yellow;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 5px;
 }
 
 /***************** MY WORK ****************/
 .section4 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -766,12 +610,10 @@ header .play a i {
   margin-left: 1rem;
   text-align: center;
 }
-
 .section4 h1 span {
   color: yellow;
   position: relative;
 }
-
 .section4 h1 span::before {
   position: absolute;
   content: "";
@@ -781,7 +623,6 @@ header .play a i {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 .section4 h1 span::after {
   position: absolute;
   content: "";
@@ -791,34 +632,18 @@ header .play a i {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 .section4 .container4 {
   min-height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .section4 .container4 .listprojects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   margin: 20px 0;
 }
-
 .section4 .container4 .listprojects button {
   outline: none;
   background: yellow;
@@ -826,102 +651,78 @@ header .play a i {
   font-weight: bold;
   cursor: pointer;
 }
-
 .section4 .container4 .animations,
 .section4 .container4 .portfolio,
 .section4 .container4 .all {
   display: none;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(1) {
   background-image: url(../images/temp/port1.png);
   background-position: center;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(2) {
   background-image: url(../images/temp/pot3.png);
   background-position: center;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(3) {
   background-image: url(../images/temp/pot1.png);
   background-position: center;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(4) {
   background-image: url(../images/temp/pot2.png);
   background-position: center;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(5) {
   background-image: url(../images/temp/port3.png);
   background-position: center;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(6) {
   background-image: url(../images/temp/web1.png);
   background-position: center;
 }
-
 .section4 .container4 .webtemp ul li:nth-child(7) {
   background-image: url(../images/temp/web3.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(1) {
   background-image: url(../images/ani1.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(2) {
   background-image: url(../images/ani2.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(3) {
   background-image: url(../images/ani3.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(4) {
   background-image: url(../images/ani4.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(5) {
   background-image: url(../images/ani5.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(6) {
   background-image: url(../images/ani6.png);
   background-position: center;
 }
-
 .section4 .container4 .animations ul li:nth-child(7) {
   background-image: url(../images/ani7.png);
   background-position: center;
 }
-
 .section4 .container4 .portfolio ul li {
   background-image: url(../images/15.jpg);
 }
-
 .section4 .container4 .all ul li {
   background-image: url(../images/5.jpg);
 }
-
 .section4 .container4 .p1 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .section4 .container4 .p1 ul li {
   position: relative;
   min-width: 300px;
@@ -930,14 +731,11 @@ header .play a i {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   background-size: 100% 100%;
-  -webkit-transition: 1s;
   transition: 1s;
 }
-
 .section4 .container4 .p1 ul li:hover {
   background-size: 150% 150%;
 }
-
 .section4 .container4 .p1 ul li a {
   position: absolute;
   width: 100%;
@@ -948,7 +746,7 @@ header .play a i {
 
 /***************** RECOMMENDATION ****************/
 .section5 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -960,12 +758,10 @@ header .play a i {
   margin-left: 1rem;
   text-align: center;
 }
-
 .section5 h1 span {
   color: yellow;
   position: relative;
 }
-
 .section5 h1 span::before {
   position: absolute;
   content: "";
@@ -975,7 +771,6 @@ header .play a i {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 .section5 h1 span::after {
   position: absolute;
   content: "";
@@ -985,50 +780,32 @@ header .play a i {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 .section5 .container5 {
   min-height: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .section5 .container5 .slider {
   min-width: 90%;
   min-height: 500px;
   border: 1px solid white;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, yellow), color-stop(50%, black));
   background: linear-gradient(90deg, yellow 50%, black 50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   /*  #myfeeds1{
-                    display: none;
-                    transition: 2s;
-               
-                }
-                #myfeeds3{
-                    display: none;
-                    transition: 2s;
-                } */
-}
+          display: none;
+          transition: 2s;
 
+      }
+      #myfeeds3{
+          display: none;
+          transition: 2s;
+      } */
+}
 .section5 .container5 .slider .myfeeds {
   overflow: hidden;
   max-width: 70%;
@@ -1040,7 +817,6 @@ header .play a i {
   font-size: 1.2rem;
   background: black;
 }
-
 .section5 .container5 .slider .myfeeds .imgbox {
   width: 200px;
   height: 200px;
@@ -1049,36 +825,29 @@ header .play a i {
   position: relative;
   left: 50%;
   top: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
-
 .section5 .container5 .slider .myfeeds .franz {
   background: url(../images/me1.png);
   background-size: cover;
 }
-
 .section5 .container5 .slider .myfeeds .ashu {
   background: url(../images/developer.png);
   background-size: cover;
   background-position: center;
 }
-
 .section5 .container5 .slider .myfeeds .rene {
   background: url(../images/developer1.jpg);
   background-size: cover;
   background-position: center;
 }
-
 .section5 .container5 .slider .myfeeds p,
 .section5 .container5 .slider .myfeeds h4 {
   padding: 10px;
 }
-
 .section5 .container5 .slider .left {
   font-size: 3rem;
 }
-
 .section5 .container5 .slider .right {
   font-size: 3rem;
   color: yellow;
@@ -1086,7 +855,7 @@ header .play a i {
 
 /***************** CONTACT ME ****************/
 .section6 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -1098,12 +867,10 @@ header .play a i {
   margin-left: 1rem;
   text-align: center;
 }
-
 .section6 h1 span {
   color: yellow;
   position: relative;
 }
-
 .section6 h1 span::before {
   position: absolute;
   content: "";
@@ -1113,7 +880,6 @@ header .play a i {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 .section6 h1 span::after {
   position: absolute;
   content: "";
@@ -1123,39 +889,27 @@ header .play a i {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 .section6 .container6 {
   min-height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
 .section6 .container6 div {
   min-width: 250px;
   text-align: center;
   margin: 15px;
 }
-
 .section6 .container6 div h4 {
   color: yellow;
   font-size: 4rem;
 }
-
 .section6 .container6 div p {
   color: white;
 }
-
 .section6 .container6 div > h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -1166,12 +920,10 @@ header .play a i {
   margin-left: 1rem;
   text-align: center;
 }
-
 .section6 .container6 div > h1 span {
   color: yellow;
   position: relative;
 }
-
 .section6 .container6 div > h1 span::before {
   position: absolute;
   content: "";
@@ -1181,7 +933,6 @@ header .play a i {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 .section6 .container6 div > h1 span::after {
   position: absolute;
   content: "";
@@ -1191,20 +942,14 @@ header .play a i {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 .section6 .container61 {
   min-height: 300px;
 }
-
 .section6 .container61 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
 }
-
 .section6 .container61 form input {
   display: block;
   padding: 15px;
@@ -1212,39 +957,22 @@ header .play a i {
   background: black;
   color: white;
 }
-
-.section6 .container61 form input[type="text"] {
+.section6 .container61 form input[type=text] {
   width: 50%;
 }
-
-.section6 .container61 form input::-webkit-input-placeholder,
-.section6 .container61 form textarea::-webkit-input-placeholder {
+.section6 .container61 form input::-moz-placeholder, .section6 .container61 form textarea::-moz-placeholder {
   color: yellow;
 }
-
-.section6 .container61 form input:-ms-input-placeholder,
-.section6 .container61 form textarea:-ms-input-placeholder {
-  color: yellow;
-}
-
-.section6 .container61 form input::-ms-input-placeholder,
-.section6 .container61 form textarea::-ms-input-placeholder {
-  color: yellow;
-}
-
 .section6 .container61 form input::placeholder,
 .section6 .container61 form textarea::placeholder {
   color: yellow;
 }
-
-.section6 .container61 form input[type="subject"] {
+.section6 .container61 form input[type=subject] {
   width: 100%;
 }
-
-.section6 .container61 form input[type="submit"] {
+.section6 .container61 form input[type=submit] {
   color: yellow;
 }
-
 .section6 .container61 form textarea {
   width: 100%;
   background: black;
@@ -1256,9 +984,8 @@ footer {
   margin-top: 20px;
   text-align: center;
 }
-
 footer h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: capitalize;
   font-weight: 200;
   line-height: 70px;
@@ -1270,12 +997,10 @@ footer h1 {
   margin-left: 1rem;
   text-align: center;
 }
-
 footer h1 span {
   color: yellow;
   position: relative;
 }
-
 footer h1 span::before {
   position: absolute;
   content: "";
@@ -1285,7 +1010,6 @@ footer h1 span::before {
   border-bottom: 4px solid yellow;
   bottom: -2px;
 }
-
 footer h1 span::after {
   position: absolute;
   content: "";
@@ -1295,71 +1019,36 @@ footer h1 span::after {
   bottom: -2px;
   border-bottom: 4px solid yellow;
 }
-
 footer p {
   color: white;
   letter-spacing: 5px;
 }
-
 footer p a i {
   color: yellow;
   padding: 10px;
 }
 
 /***************** TEXT ANIMATION ****************/
-@-webkit-keyframes jump {
-  0% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
-  }
-  40% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
-  }
-  50% {
-    -webkit-transform: translateY(-100px) rotate(0deg);
-            transform: translateY(-100px) rotate(0deg);
-  }
-  60% {
-    -webkit-transform: translateY(-100px) rotate(180deg);
-            transform: translateY(-100px) rotate(180deg);
-  }
-  80% {
-    -webkit-transform: translateY(-100px) rotate(360deg);
-            transform: translateY(-100px) rotate(360deg);
-  }
-  100% {
-    -webkit-transform: translateY(0px) rotate(360deg);
-            transform: translateY(0px) rotate(360deg);
-  }
-}
 @keyframes jump {
   0% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
   40% {
-    -webkit-transform: translateY(0px) rotate(0deg);
-            transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px) rotate(0deg);
   }
   50% {
-    -webkit-transform: translateY(-100px) rotate(0deg);
-            transform: translateY(-100px) rotate(0deg);
+    transform: translateY(-100px) rotate(0deg);
   }
   60% {
-    -webkit-transform: translateY(-100px) rotate(180deg);
-            transform: translateY(-100px) rotate(180deg);
+    transform: translateY(-100px) rotate(180deg);
   }
   80% {
-    -webkit-transform: translateY(-100px) rotate(360deg);
-            transform: translateY(-100px) rotate(360deg);
+    transform: translateY(-100px) rotate(360deg);
   }
   100% {
-    -webkit-transform: translateY(0px) rotate(360deg);
-            transform: translateY(0px) rotate(360deg);
+    transform: translateY(0px) rotate(360deg);
   }
 }
-
 /***************** MEDIA QUERIES ****************/
 @media only screen and (max-width: 1120px) {
   #ham {
@@ -1369,16 +1058,12 @@ footer p a i {
     display: none;
   }
   .navibar ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .navibar ul li {
     height: 3rem;
   }
 }
-
 @media only screen and (max-width: 420px) {
   html {
     font-size: 12px;
@@ -1388,7 +1073,6 @@ footer p a i {
     background-image: none;
   }
 }
-
 @media only screen and (max-width: 720px) {
   html {
     font-size: 13px;
@@ -1399,5 +1083,4 @@ footer p a i {
   html header {
     background-image: none;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

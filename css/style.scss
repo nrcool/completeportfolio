@@ -435,6 +435,7 @@ header {
                     display: block;
                     border: 2px solid $themecolor;
                     padding: 5px;
+                    filter: grayscale(100%);
                 }
 
                 &::after {

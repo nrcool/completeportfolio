@@ -8,43 +8,31 @@ body {
 
 .navigation {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 1rem;
 }
-
 .navigation li {
   width: 150px;
   list-style: none;
   margin: 0.5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 .navigation li a {
   color: yellow;
   background: black;
   padding: 1rem;
   font-size: 1rem;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: .5s;
-  transition: .5s;
+  box-sizing: border-box;
+  transition: 0.5s;
 }
-
 .navigation li a:hover {
   color: black;
   background: yellow;
   border: 1px solid black;
 }
-
 .navigation li a.active {
   background: yellow;
   border: 1px solid black;
@@ -55,12 +43,10 @@ body {
   position: relative;
   margin: 1rem;
 }
-
-.main .img[alt="pc"] {
+.main .img[alt=pc] {
   max-width: 500px;
   height: 400px;
 }
-
 .main .inner {
   width: 456px;
   height: 240px;
@@ -79,7 +65,6 @@ body {
   mix-blend-mode: multiply;
   border: 5px solid yellow;
 }
-
 .demo a::after {
   content: "";
   position: absolute;
@@ -91,20 +76,16 @@ body {
   right: 0;
   top: 0;
   z-index: 0;
-  -webkit-transition: 1s;
   transition: 1s;
   mix-blend-mode: difference;
 }
-
 .demo a:hover:after {
   width: 100%;
 }
-
 .demo a:hover {
   color: yellow;
   text-decoration: none;
 }
-
 .demo a i {
   padding: 10px;
 }
@@ -118,7 +99,7 @@ body {
     position: relative;
     margin: 1rem;
   }
-  .main .img[alt="pc"] {
+  .main .img[alt=pc] {
     max-width: 400px;
     height: 300px;
   }
@@ -127,26 +108,19 @@ body {
     height: 140px;
   }
   .demo a {
-    padding: .5rem;
+    padding: 0.5rem;
   }
 }
-
 @media only screen and (max-width: 580px) {
   .figure {
     width: 80%;
     margin-left: 40px;
   }
   .demo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media only screen and (min-width: 760px) and (max-width: 990px) {
   .row {
     margin-bottom: 4rem;
@@ -155,7 +129,7 @@ body {
     position: relative;
     margin: 1rem;
   }
-  .main .img[alt="pc"] {
+  .main .img[alt=pc] {
     max-width: 350px;
     height: 250px;
   }
@@ -164,29 +138,18 @@ body {
     height: 90px;
   }
   .demo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .demo a {
-    padding: .5rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   .navigation {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     margin-left: 0;
     display: none;
     position: fixed;
@@ -202,5 +165,4 @@ body {
     display: none;
     cursor: pointer;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
